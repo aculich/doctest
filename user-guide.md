@@ -1,20 +1,20 @@
 [Login](#Login) | [Data Transfer](#Data_Transfer) | [Hardware](#Hardware) | [Storage](#Storage) | [Scheduler](#Scheduler) | [Software](#Software)
 
-### [Login Procedure]() {#login-procedure}
+### [Login Procedure]()
 
 The SAVIO cluster uses One Time Passwords (OTP) for login authentication. You will need to download and configure the Google Authenticator application on a tablet, and/or smart phone (Android or iOS) to generate these one time passwords. Please see [Logging into Savio](http://research-it.berkeley.edu/services/high-performance-computing/logging-savio)for instructions on installing and configuring Google Authenticator.
 
 -   Login Protocol: ssh
 -   Login Server: hpc.brc.berkeley.edu
 
-### [Data Transfer]() {#data-transfer}
+### [Data Transfer]()
 
 To transfer data to or from the SAVIO cluster, connect to the cluster's Data Transfer Node. For instructions, please see [Transferring Data](http://research-it.berkeley.edu/services/high-performance-computing/transferring-data).
 
 -   Data Transfer Node: dtn.brc.berkeley.edu
 -   Globus Endpoint Name: ucb\#brc
 
-### [Hardware Configuration]() {#hardware-configuration}
+### [Hardware Configuration]()
 
 Please refer to the following table with the hardware configuration of each generation of nodes. A high performance Lustre file system is also available as scratch space to all users.
 
@@ -115,7 +115,7 @@ n0[215-222].savio2</p></td>
 </tbody>
 </table>
 
-### [Storage and Backup]() {#storage-and-backup}
+### [Storage and Backup]()
 
 SAVIO cluster users are entitled to access the following storage systems. Please be sure to use these filesystems correctly. Users should not use their HOME directory for heavy I/O activity during job runs.
 
@@ -166,7 +166,7 @@ SAVIO cluster users are entitled to access the following storage systems. Please
 </tbody>
 </table>
 
-### [Scheduler Configuration]() {#scheduler-configuration}
+### [Scheduler Configuration]()
 
 The SAVIO cluster uses [SLURM](http://research-it.berkeley.edu/services/high-performance-computing/running-your-jobs) as the scheduler to manage jobs on the cluster. Please see [Running Your Jobs](http://research-it.berkeley.edu/services/high-performance-computing/running-your-jobs) for instructions on using the scheduler, as well as taking note of crucial additional details, below.
 
@@ -186,7 +186,7 @@ Depending on the specific group(s) to which a user belongs, s/he may have access
     -   To run jobs with the MOU model, the proper MOU QoS (*e.g.*, --qos=**savio**\_normal, or --qos=**savio**\_debug) should be used.
 -   A standard fair-share policy with a decay half-life of 14 days (2 weeks) is enforced.
 
-##### Configuration Details {#configuration-details}
+##### Configuration Details
 
 <table style="width:96%;">
 <colgroup>
@@ -563,7 +563,7 @@ pc_*</td>
 
 **NOTE:** To check which account and/or QoS that a user is allowed to use, please run "sacctmgr -p show associations user=$USER".
 
-##### [Savio Condo QoS Configurations]() {#savio-condo-qos-configurations}
+##### [Savio Condo QoS Configurations]()
 
 <table style="width:99%;">
 <colgroup>
@@ -640,23 +640,23 @@ pc_*</td>
 </tbody>
 </table>
 
-##### [Savio Bigmem Condo QoS Configurations]() {#savio-bigmem-condo-qos-configurations}
+##### [Savio Bigmem Condo QoS Configurations]()
 
  
 
-##### [Savio2 HTC Condo QoS Configurations]() {#savio2-htc-condo-qos-configurations}
+##### [Savio2 HTC Condo QoS Configurations]()
 
 | Account      | QoS                   | QoS Limit             |
 |--------------|-----------------------|-----------------------|
 | co\_rosalind | rosalind\_htc\_normal | 8 nodes max per group |
 
-##### [Savio2 GPU Condo QoS Configurations]() {#savio2-gpu-condo-qos-configurations}
+##### [Savio2 GPU Condo QoS Configurations]()
 
 | Account  | QoS               | QoS Limit             |
 |----------|-------------------|-----------------------|
 | co\_acrb | acrb\_gpu\_normal | 36 GPUs max per group |
 
-##### [Savio2 Condo QoS Configurations]() {#savio2-condo-qos-configurations}
+##### [Savio2 Condo QoS Configurations]()
 
 | Account      | QoS              | QoS Limit              |
 |--------------|------------------|------------------------|
@@ -671,7 +671,7 @@ pc_*</td>
 | co\_stat     | stat\_normal     | 2 nodes max per group  |
 | co\_bachtrog | bachtrog\_normal | 4 nodes max per group  |
 
-[Savio2 Bigmem Condo QoS Configurations](){#Savio2_Bigmem_Condo}
+<a href="" id="Savio2_Bigmem_Condo">Savio2 Bigmem Condo QoS Configurations</a>
 
 | Account    | QoS                    | QoS Limit             |
 |------------|------------------------|-----------------------|
@@ -679,17 +679,19 @@ pc_*</td>
 | co\_dweisz | dweisz\_bigmem\_normal | 4 nodes max per group |
 | co\_aiolos | aiolos\_bigmem\_normal | 4 nodes max per group |
 
-##### [Low Priority Jobs]() {#low-priority-jobs}
+##### [Low Priority Jobs]()
 
 All condo contributors (account name starts with "co\_") are entitled to use the extra resource that is available on the SAVIO cluster (across all partitions). The is done through a low priority QoS "savio\_lowprio" and your account is automatically subscribed to this QoS during the account creation stage. You do not need to request for it explicitly. By using this QoS you are no longer limited by your condo size. What this means to users is that you will now have access to the broader compute resource which is limited by the size of partitions. However this QoS does not get a priority as high as the general QoSs, such as "savio\_normal" and "savio\_debug", or all the condo QoSs, and it is subject to preemption when all the other QoSs become busy. Thus it has two implications:
 
 1.  When system is busy, any job that is submitted with this QoS will be pending and yield to other jobs with higher priorities.
 2.  When system is busy and there are higher priority jobs pending, scheduler will preempt jobs that are running with this lower priority QoS. Preempted jobs can choose whether the job should be simply killed, or be automatically requeued after it's killed, at submission time. Please note that, since preemption could happen at any time, it would be very beneficial if your job is capable of checkpointing/restarting by itself, when you choose to requeue the job. Otherwise, you may need to verify data integrity manually before you want to run the job again.
 
-##### [Job Script Examples]() {#job-script-examples}
+##### [Job Script Examples]()
 
 For many examples of job script files that you can adapt and use for running your own jobs, please see [Running Your Jobs](http://research-it.berkeley.edu/services/high-performance-computing/running-your-jobs).
 
-### [Software Configuration]() {#software-configuration}
+### [Software Configuration]()
 
 The SAVIO cluster uses [Environment Modules](http://research-it.berkeley.edu/services/high-performance-computing/accessing-and-installing-software) to manage the cluster-wide software installation.
+
+

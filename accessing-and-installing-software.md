@@ -1,6 +1,6 @@
 [Overview](#Overview)  | [Usage Examples](#Examples)  | [Provided Software](#Software_Provided)  | [Chaining Modules](#Chaining) | [Installing Your Own](#Installing)
 
-### [1. Overview]() {#overview}
+### [1. Overview]()
 
 To access much of the software available on the Savio cluster - ranging from compilers and interpreters to statistical analysis and visualization software, and much more - you'll use [Environment Module commands](#Examples).
 
@@ -10,7 +10,7 @@ As a quick overview, Environment Modules are used to manage users’ runtime env
 
 Finally, in addition to the software provided on the Savio cluster, you're also welcome to [install your own software](#Installing).
 
-### [2. Environment Modules Usage Examples]() {#environment-modules-usage-examples}
+### [2. Environment Modules Usage Examples]()
 
 Below are some of the Environment Module commands that you'll be using most frequently. All of these commands begin with module and are followed by a subcommand. (In this list of commands, a vertical bar (“|”) means “or”, e.g., module add and module load are equivalent. And you'll need to substitute actual modulefile names for *modulefile*, *modulefile1*, and *modulefile2* in the examples below.)
 
@@ -116,10 +116,10 @@ It can be helpful to try out each of the following examples in sequence, to more
 
 ...
 
-**NOTE: Python modulefiles will become available only after the “*python*” modulefile is loaded. The same is the case for R packages, libraries for C compilers, etc.: they will only become available after their respective parent modules are loaded.**  
+**NOTE: Python modulefiles will become available only after the “*python*” modulefile is loaded. The same is the case for R packages, libraries for C compilers, etc.: they will only become available after their respective parent modules are loaded.**
  
 
-### [3. Software Provided on Savio](){#Software_Provided} {#software-provided-on-savio}
+### <a href="" id="Software_Provided">3. Software Provided on Savio</a>
 
 Research IT provides and maintains a set of system level software modules. The purpose is to provide an ecosystem that most users can rely on to accomplish their research and studies. The range of applications and libraries that Research IT supports highly depend on the use case and the frequency of how often a support request is received.
 
@@ -132,7 +132,7 @@ Currently the following categories of applications and libraries are supported, 
 -   Development Tools
 -   Data processing and Visualization Tools
 -   Typesetting and Publishing Tools
--   Miscellaneous Tools (examples not yet listed below)  
+-   Miscellaneous Tools (examples not yet listed below)
      
 
 Category
@@ -179,13 +179,13 @@ TeX Live, Ghostscript, Doxygen
 
  
 
-### [4. Chaining Software Modules]() {#chaining-software-modules}
+### [4. Chaining Software Modules]()
 
 Environment Modules also allow a user to optionally integrate their own application environment together with the system-provided application environment, by allowing different categories of modulefiles to be chained together. This provides a common interface for simplicity, while still maintaining diversity and flexibility:
 
--   The first category of the modulefiles are provided and maintained by Research IT, which include the commonly used applications and libraries, such as compilers, math libraries, I/O libraries, data processing and visualization tools, etc. We use a hierarchical structure to maintain the cleanness without losing the flexibility of it.  
+-   The first category of the modulefiles are provided and maintained by Research IT, which include the commonly used applications and libraries, such as compilers, math libraries, I/O libraries, data processing and visualization tools, etc. We use a hierarchical structure to maintain the cleanness without losing the flexibility of it.
      
--   The second category of the modulefiles are automatically chained for the group of users who belong to the same group on the cluster, if the modulefiles exist in the designated directory. This allows the same group of users to share some of the common applications that they use for collaboration and saves spaces. Normally the user group maintains these modulefiles. But Research IT can also provide assistance under support agreement and on a per request basis.  
+-   The second category of the modulefiles are automatically chained for the group of users who belong to the same group on the cluster, if the modulefiles exist in the designated directory. This allows the same group of users to share some of the common applications that they use for collaboration and saves spaces. Normally the user group maintains these modulefiles. But Research IT can also provide assistance under support agreement and on a per request basis.
      
 -   The third category of the modulefiles can also be chained on demand by a user if the user chooses to use Environment Modules to manage user specific applications as well. To do that, user needs to append the location of the modulefiles to the environment variable *MODULEPATH*. This can be done in one of the following ways:
 
@@ -197,7 +197,7 @@ Environment Modules also allow a user to optionally integrate their own applicat
 
         setenv MODULEPATH "$MODULEPATH":/location/to/my/modulefiles
 
-### [5. Installing Your Own]() {#installing-your-own}
+### [5. Installing Your Own]()
 
 In addition to the software provided on the Savio cluster, you are most welcome to install your own software.
 
@@ -218,3 +218,5 @@ As well, if your software has installation dependencies – such as libraries, i
 If you have any questions about installing your software on Savio, whether before or during installation, please write us at <brc-hpc-help@berkeley.edu>. Be sure to let us know of any pertinent information regarding the software you're installing, such as URL(s) for its installation guide, list of dependencies, and the like.
 
  
+
+

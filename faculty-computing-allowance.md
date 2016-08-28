@@ -1,4 +1,4 @@
-#### Download the [Faculty Computing Allowance info packet](http://research-it.berkeley.edu/sites/default/files/FCA%20Bundle.pdf). {#download-thefaculty-computing-allowance-info-packet.}
+#### Download the [Faculty Computing Allowance info packet](http://research-it.berkeley.edu/sites/default/files/FCA%20Bundle.pdf).
 
 Faculty and PIs wanting to obtain access to Savio for their research will need to complete the [Requirements Survey](https://docs.google.com/a/berkeley.edu/forms/d/1rkWi5Og2zqb6Af47djQhtWcpHnd4Cz6li8OfJF4ww8M/viewform) and include a list of anticipated users as indicated on the form. A  Savio cluster specific project will be setup using a unique name and all user accounts will be created under this unique project name. The project name will also be used to setup (SLURM) scheduler accounts using which we can enforce allowances, monitor and report cluster usage. Any UCB researcher who wants to open Savio cluster account associated with an existing Savio cluster project (or the Savio scheduler account name) can request by submitting the [Additional User Account Request Form](https://docs.google.com/a/berkeley.edu/forms/d/1byVN8FjyWSvkDYMvzs6SJM5JFfrK37za50exRSWnCls/viewform).
 
@@ -17,7 +17,7 @@ Renewal applications submitted in May will be processed beginning June 1st. Thos
 
 **Viewing the Usage of Your Allowance**
 
-You can view how many Service Units have been used to date under a Faculty Computing Allowance, or by a particular user account on Savio, via the [check\_usage.sh script](http://research-it.berkeley.edu/services/high-performance-computing/tips-using-brc-savio-cluster#q-how-to-check-my-fca-usage-){.toc-filter-processed}.
+You can view how many Service Units have been used to date under a Faculty Computing Allowance, or by a particular user account on Savio, via the <a href="http://research-it.berkeley.edu/services/high-performance-computing/tips-using-brc-savio-cluster#q-how-to-check-my-fca-usage-" class="toc-filter-processed">check_usage.sh script</a>.
 
 **Charges for Running Jobs**
 
@@ -27,9 +27,11 @@ Each time a computational job is run on the cluster under a Faculty Computing A
 
 Have you exhausted your entire Faculty Computing Allowance? There are a number of [options for getting more computing time for your project](http://research-it.berkeley.edu/services/high-performance-computing/options-when-faculty-computing-allowance-exhausted).
 
-**Acknowledgements**  
+**Acknowledgements**
 Please acknowledge Savio in your publications. (Such acknowledgements are an important factor in helping to justify ongoing funding for, and expansion of, the cluster.) A sample statement is:
 
 *"This research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer)."*
 
 As well, we encourage you to [tell us how BRC impacts your research](https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdqhh2A77-l8N3eOcOzrH508UKfhIvPn8h5gLDUJ9XrRLvA5Q/viewform) (Google Form), at any time!
+
+

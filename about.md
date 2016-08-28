@@ -32,10 +32,10 @@ This service is supported by a collaboration with the [High Performance Computin
 
 Berkeley Research Computing - HPC Staff:
 
-Gary Jung - Manager, BRC High Performance Computing  
-Greg Kurtzer - Linux Cluster Technical Architect  
-Michael Jennings - Senior HPC Engineer  
-John White - Parallel filesystems and HPC storage  
-Krishna Muriki - HPC User and Globus Online support, Science Gateways  
-Yong Qin - Application consulting, benchmarking, performance tuning  
+Gary Jung - Manager, BRC High Performance Computing
+Greg Kurtzer - Linux Cluster Technical Architect
+Michael Jennings - Senior HPC Engineer
+John White - Parallel filesystems and HPC storage
+Krishna Muriki - HPC User and Globus Online support, Science Gateways
+Yong Qin - Application consulting, benchmarking, performance tuning
 Bernard Li - HPC Engineer

@@ -2,7 +2,7 @@ The **Savio** cluster is open to all UC Berkeley researchers who need access to 
 
 There are two primary ways to obtain accounts on Savio for your project:
 
--   Purchasing and contributing Condo nodes to the cluster. This option is open to any campus researcher, and provides ongoing, priority access to you and your research affiliates who are members of the Condo. For details, please see [Condo Cluster Program](http://research-it.berkeley.edu/services/high-performance-computing/condo-cluster-program).  
+-   Purchasing and contributing Condo nodes to the cluster. This option is open to any campus researcher, and provides ongoing, priority access to you and your research affiliates who are members of the Condo. For details, please see [Condo Cluster Program](http://research-it.berkeley.edu/services/high-performance-computing/condo-cluster-program).
      
 -   Requesting a block of no-cost computing time via a Faculty Computing Allowance. This option is currently offered to UC Berkeley faculty, who can then share their Allowance amongst their postdocs, grad students, staff researchers, and other campus research affiliates. For details, please see [Faculty Computing Allowance](http://research-it.berkeley.edu/services/high-performance-computing/faculty-computing-allowance).
 

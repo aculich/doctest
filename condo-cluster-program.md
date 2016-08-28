@@ -124,31 +124,31 @@ Warranty
 
 **[]()Charter Condo Contributers**
 
-[Eliot Quataert](http://astro.berkeley.edu/faculty-profile/eliot-quataert), Theoretical Astrophysics Center, Berkeley Astronomy Department  
-[Eugene Chiang](http://astro.berkeley.edu/faculty-profile/eugene-chiang), Berkeley Astronomy Department  
-[Chris McKee](http://astro.berkeley.edu/faculty-profile/chris-mckee), Berkeley Astronomy Department  
-[Richard Klein](http://astro.berkeley.edu/faculty-profile/richard-klein), Berkeley Astronomy Department  
-[Uros Seljak](http://physics.berkeley.edu/?textonly=0&option=com_dept_management&Itemid=312&task=view&id=3319), Physics Department  
-[Jon Arons](http://astro.berkeley.edu/faculty-profile/jon-arons), Berkeley Astronomy Department  
-[Ron Cohen](http://chem.berkeley.edu/faculty/cohen/index.php), Department of Chemistry, Department of Earth and Planetary Science  
-[John Chiang](http://climate.geog.berkeley.edu/~jchiang/Lab/Home.html), Department of Geography and Berkeley Atmospheric Sciences Center  
-[Fotini Katopodes Chow](http://www.ce.berkeley.edu/people/faculty/Chow?destination=people%2Ffaculty%2FChow), Department of Civil and Environmental Engineering  
-[Jasmina Vujic](http://www.nuc.berkeley.edu/people/jasmina_vujic), Department of Nuclear Engineering  
-[Jasjeet Sekhon](http://sekhon.berkeley.edu/), Department of Political Science and Statistics  
-[Rachel Slaybaugh](http://www.nuc.berkeley.edu/people/rachel-slaybaugh), Nuclear Engineering  
-[Massimiliano Fratoni](http://www.nuc.berkeley.edu/people/massimiliano_fratoni), Nuclear Engineering  
-[Hiroshi Nikaido,](http://mcb.berkeley.edu/faculty/all/nikaidoh) Molecular and Cell Biology  
-[Donna Hendrix,](http://qb3.berkeley.edu/administration/) Computation Genomics Research Lab  
-[Justin McCrary,](http://dlab.berkeley.edu/people/justin-mccrary-faculty-director) Director D-Lab  
-[Alan Hubbard,](http://hubbard.berkeley.edu/) Professor and Head of Biostatistics Division, School of Public Health  
-[Mark van der Laan,](https://www.stat.berkeley.edu/~laan/) Professor of Biostatistics and Statistics, School of Public Health  
-[Michael Manga,](http://seismo.berkeley.edu/~manga/) Department of Earth and Planetary Sciences  
-[Jeff Neaton](http://physics.berkeley.edu/people/faculty/jeffrey-neaton), Physics  
-[Eric Neuscamman](http://chemistry.berkeley.edu/faculty/chem/neuscamman), College of Chemistry  
-[M. Alam Reza](http://www.me.berkeley.edu/people/faculty/m-reza-alam), Mechanical Engineering  
-[Elaine Tseng](http://profiles.ucsf.edu/elaine.tseng), UCSF School of Medicine  
-[Julius Guccione](http://www.surgery.ucsf.edu/faculty/adult-cardiothoracic-surgery/julius-m-guccione,-jr,-phd.aspx), UCSF Department of Surgery  
-[Ryan Lovett](http://statistics.berkeley.edu/ryan-lovett), Statistical Computing Facility  
+[Eliot Quataert](http://astro.berkeley.edu/faculty-profile/eliot-quataert), Theoretical Astrophysics Center, Berkeley Astronomy Department
+[Eugene Chiang](http://astro.berkeley.edu/faculty-profile/eugene-chiang), Berkeley Astronomy Department
+[Chris McKee](http://astro.berkeley.edu/faculty-profile/chris-mckee), Berkeley Astronomy Department
+[Richard Klein](http://astro.berkeley.edu/faculty-profile/richard-klein), Berkeley Astronomy Department
+[Uros Seljak](http://physics.berkeley.edu/?textonly=0&option=com_dept_management&Itemid=312&task=view&id=3319), Physics Department
+[Jon Arons](http://astro.berkeley.edu/faculty-profile/jon-arons), Berkeley Astronomy Department
+[Ron Cohen](http://chem.berkeley.edu/faculty/cohen/index.php), Department of Chemistry, Department of Earth and Planetary Science
+[John Chiang](http://climate.geog.berkeley.edu/~jchiang/Lab/Home.html), Department of Geography and Berkeley Atmospheric Sciences Center
+[Fotini Katopodes Chow](http://www.ce.berkeley.edu/people/faculty/Chow?destination=people%2Ffaculty%2FChow), Department of Civil and Environmental Engineering
+[Jasmina Vujic](http://www.nuc.berkeley.edu/people/jasmina_vujic), Department of Nuclear Engineering
+[Jasjeet Sekhon](http://sekhon.berkeley.edu/), Department of Political Science and Statistics
+[Rachel Slaybaugh](http://www.nuc.berkeley.edu/people/rachel-slaybaugh), Nuclear Engineering
+[Massimiliano Fratoni](http://www.nuc.berkeley.edu/people/massimiliano_fratoni), Nuclear Engineering
+[Hiroshi Nikaido,](http://mcb.berkeley.edu/faculty/all/nikaidoh) Molecular and Cell Biology
+[Donna Hendrix,](http://qb3.berkeley.edu/administration/) Computation Genomics Research Lab
+[Justin McCrary,](http://dlab.berkeley.edu/people/justin-mccrary-faculty-director) Director D-Lab
+[Alan Hubbard,](http://hubbard.berkeley.edu/) Professor and Head of Biostatistics Division, School of Public Health
+[Mark van der Laan,](https://www.stat.berkeley.edu/~laan/) Professor of Biostatistics and Statistics, School of Public Health
+[Michael Manga,](http://seismo.berkeley.edu/~manga/) Department of Earth and Planetary Sciences
+[Jeff Neaton](http://physics.berkeley.edu/people/faculty/jeffrey-neaton), Physics
+[Eric Neuscamman](http://chemistry.berkeley.edu/faculty/chem/neuscamman), College of Chemistry
+[M. Alam Reza](http://www.me.berkeley.edu/people/faculty/m-reza-alam), Mechanical Engineering
+[Elaine Tseng](http://profiles.ucsf.edu/elaine.tseng), UCSF School of Medicine
+[Julius Guccione](http://www.surgery.ucsf.edu/faculty/adult-cardiothoracic-surgery/julius-m-guccione,-jr,-phd.aspx), UCSF Department of Surgery
+[Ryan Lovett](http://statistics.berkeley.edu/ryan-lovett), Statistical Computing Facility
 [ ]()
 
 **Faculty Perspectives**

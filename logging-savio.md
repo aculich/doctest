@@ -14,7 +14,7 @@ Requiring time-expiring, one-time-use passwords helps protect your work and data
 
 ------------------------------------------------------------------------
 
-### Installing and setting up Google Authenticator on a mobile device {#installing-and-setting-up-google-authenticator-on-a-mobile-device}
+### Installing and setting up Google Authenticator on a mobile device
 
 Before you can log into the Savio cluster for the first time, you will need to install and set up Google Authenticator on at least one mobile device: a smartphone or tablet running Android or iOS.
 
@@ -46,7 +46,7 @@ After you’ve successfully created your new token, a QR code for that token wil
 
 1.  Verify that the Google Authenticator app is now generating one-time passwords. (Note: the one-time password will be displayed under the name “Lawrence Berkeley National Laboratory” in that app.)
 
-### Logging into Savio {#logging-into-savio}
+### Logging into Savio
 
 1.  Make sure that the Google Authenticator app is running on your smartphone or tablet. (You’ll need to enter a one-time password displayed by this app at step 3, below.)
 
@@ -65,3 +65,5 @@ For instance, if your PIN was `9999` (hint: don’t use this example as your own
 `Password: 9999123456`
 
  
+
+

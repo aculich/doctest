@@ -49,7 +49,7 @@ After the downtime we will no longer be loading Intel compilers in user environm
 
 **May 9, 2016 12:00 PDT** - For the past few days we have been experiencing highly intermittent access issues with data on the BRC supercluster's /global/scratch filesystem. It has been very transient, with only some users experiencing these issues and only for short periods of time. We are aware of this and our engineers are actively working with the storage vendor to identify the source and resolve these problems. For those who are experiencing the issue just a simple listing of the files in their folders would appear to be hung without giving any response. If you experience the problem, send us an email to <brc-hpc-help@berkeley.edu> with the path to the folder you are trying to access, as it would give us more data points for debugging.
 
-**April 26, 2016 16:00 PDT** - Pledge service is now back online. Please try to connect now and your Pledge OTP should work. In case you generated a lot of OTPs while the service is offline its possible your Pledge has gone out of sync with the server and your Pledge OTPs might still not work. In this case please re-sync your Pledge app by following the instructions under the last tab on this page:<https://commons.lbl.gov/display/itfaq/Installing+and+Configuring+the+OTP+Token>
+**April 26, 2016 16:00 PDT** - Pledge service is now back online. Please try to connect now and your Pledge OTP should work. In case you generated a lot of OTPs while the service is offline its possible your Pledge has gone out of sync with the server and your Pledge OTPs might still not work. In this case please re-sync your Pledge app by following the instructions under the last tab on this page:<a href="https://commons.lbl.gov/display/itfaq/Installing+and+Configuring+the+OTP+Token" class="uri" class="uri">https://commons.lbl.gov/display/itfaq/Installing+and+Configuring+the+OTP+Token</a>
 
 **April 26, 2016 14:47 PDT** - We are having some unexpected issues with the One Time Password service today. User attempts to connect/SSH to cluster resources might not be working. We are aware of this message and are working on it. Users with already connected active sessions can continue to use the cluster resources as before. Do not loose your connections. Users trying to start new sessions will not be able to do so. We apologize for this inconvenience and we will update you when things are back to normal. Avoid generating new OTPs from your Pledge applications until new email you or else you might run your Pledge apps out of sync with the servers.
 
@@ -89,16 +89,18 @@ To select one or the other, please specify the appropriate SLURM partition name 
 
 **1/27/2015 16:05 PST **Global Scratch on SAVIO is down due to a hardware problem so all compute nodes have been taken offline.
 
-**12/23/2014 22:05 PST - Update on Global SCRATCH Problem**  
+**12/23/2014 22:05 PST - Update on Global SCRATCH Problem**
 Global SCRATCH is now back online after our emergency maintenance. Unfortunately our attempts did not improve the situation we need to follow up with the storage vendor once again and try this procedure again either on or after December 26, 2014. We will notify all users when this is scheduled again in future.
 
-**12/23/2014 18:54 PST - Emergency Filesystem Maintenance**  
+**12/23/2014 18:54 PST - Emergency Filesystem Maintenance**
 We ran into issues with a second attempt at rebuilding the Global SCRATCH filesystem. Our storage vendor has recommended that we immediately take the filesystem (/global/scratch) offline to reset the controllers and disks. Given the importance and priority of making this filesystem reliable we will be doing this in the next several minutes now. SCRATCH filesystem may stay offline for couple of hours and attempts to access (both reads & writes) of data will fail during this time. There are some user jobs running in the queues, if any of those jobs use this filesystem they might fail. Please verify your failed jobs and resubmit them to the queues. Any data transfer sessions currently writing to /global/scratch will also break. Please restart your transfers.
 
-**12/19/2014 - BRC Support during the Holiday Curtailment**  
+**12/19/2014 - BRC Support during the Holiday Curtailment**
 BRC SAVIO cluster will continue to operate during the UC Berkeley Holiday Curtailment December 24, 2014 through Jan 1, 2015 Users experiencing system problems can continue to send email to brc-hpc-help@berkeley.edu to report problems. BRC staff will be monitoring incoming email and trouble tickets, but support will be best-effort and prioritized based on criticality and impact. We wish all users a great Holiday break and a Happy New Year.
 
-**12/12/2014 - SAVIO Global SCRATCH Problem**  
+**12/12/2014 - SAVIO Global SCRATCH Problem**
 SAVIO cluster SCRATCH filesystem (/global/scratch) started having issues from afternoon today, Dec 12th. One of the backend storage controller started labeling some of the disks as failed. BRC engineers having been working on it since this afternoon and as of now the filesystem is back online and users should be able to access all their data. But to bring this RAID filesystem back to it normal condition all the failed disks need to rebuild and that process is going on right now. Until the rebuilding process completes successfully (over the next couple of days) we cannot guarantee total stability of the filesystem. There is some possibility that filesystem does not recover and we experience data loss. As the filesystem is accessible right now we ask all our SAVIO cluster users to review what they have under this SCRATCH filesystem and manually backup any important data immediately to a local storage. Please remember this is a SCRATCH filesystem and there are no system level backups, if data is lost we cannot recover. We highly recommend using [Globus](https://www.globus.org/) for data transfers out of the SAVIO cluster. Our endpoint name is ucb\#brc. If you would prefer to use traditional transfer tools like scp/rsync please login to the dedicated Data Transfer Node (DTN), dtn.brc.berkeley.edu and start your transfers from that node.
 
 ### [Live Status](#live-status)
+
+
