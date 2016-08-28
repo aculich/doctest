@@ -6,7 +6,7 @@ For an overview of hardware, software, and more on Savio, please see the [System
 
 **Logging in**. You'll use your favorite SSH client program to log into the cluster via hpc.brc.berkeley.edu. E.g., from the command line (where you'll substitute your actual Savio username for myusername):
 
-$ ssh myusername@hpc.brc.berkeley.edu
+$ ssh <myusername@hpc.brc.berkeley.edu>
 
 **File storage**. Once you log in, you'll be in your home directory (/global/home/users/*myusername*), with a 10 GB storage limit. You also have access to a personal scratch directory (/global/scratch/*myusername*), through which you'll share Savio's Global Scratch storage area with other cluster users. Within that scratch area you can store vast amounts of data, but you should always regard it as temporary storage. (In addition to home and scratch directories, some Savio users may also have access to a group directory, shared with their collaborators.) Your home, scratch, and (if relevant) group directories are all equally accessible from Savio's login, compute, and data transfer nodes.
 

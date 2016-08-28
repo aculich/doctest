@@ -239,4 +239,3 @@ spark-stop
 -   If the command above finishes successfully you can stop here. Otherwise please check [Intel's C++11 features support page](https://software.intel.com/en-us/articles/c0x-features-supported-by-intel-c-compiler) to learn whether the C++11 features your code uses are supported by the default version of the Intel compilers. If not, please switch to the cluster's environment module that provides a higher version of the Intel compilers. To do so, enter "module switch intel intel/xxxx.yy.zz" (replacing "xxxx.yy.zz" with that higher version number; enter "module avail" to find that number, if needed).
 -   If your code uses the C++11 Standard Template Library (STL), you’ll also need to load the GCC/4.8.5 software module as a driver; its header files provide support for the C++11 STL. To do so, enter "module load gcc/4.8.5" before compiling your code.
 
-

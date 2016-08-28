@@ -218,5 +218,3 @@ As well, if your software has installation dependencies – such as libraries, i
 If you have any questions about installing your software on Savio, whether before or during installation, please write us at <brc-hpc-help@berkeley.edu>. Be sure to let us know of any pertinent information regarding the software you're installing, such as URL(s) for its installation guide, list of dependencies, and the like.
 
  
-
-

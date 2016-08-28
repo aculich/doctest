@@ -65,5 +65,3 @@ For instance, if your PIN was `9999` (hint: don’t use this example as your own
 `Password: 9999123456`
 
  
-
-

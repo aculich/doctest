@@ -174,7 +174,7 @@ Three different models are supported when running jobs on the Savio cluster thro
 
 -   Condo model - Faculty and principal investigators can join the [Condo program](http://research-it.berkeley.edu/services/high-performance-computing/condo-cluster-program) by purchasing compute nodes which are contributed to the cluster. Users from the condo group are granted ongoing, no cost use of compute resources for running their jobs, up to the amount contributed. Condo users can also access larger amounts of compute resources at no cost via Savio's preemptable, [low-priority quality of service option](#Low_Priority).
 -   Faculty Computing Allowance (FCA) model - This program provides qualified faculty and principal investigators with up to 200K [Service Units](http://research-it.berkeley.edu/services/high-performance-computing/service-units-savio) on the SAVIO cluster at no cost, during each annual application period. Please see [Faculty Computing Allowance](http://research-it.berkeley.edu/services/high-performance-computing/faculty-computing-allowance) for more details.
--   Memorandum of Understanding (MOU) model - If you use your entire Faculty Computing Allowance for a year and need additional compute time on Savio, please contact us at brc-hpc-help@berkeley.edu. We can help you set up an MOU, through which you can pay for additional blocks of compute time at a rate that is highly competitive with those of other compute providers.
+-   Memorandum of Understanding (MOU) model - If you use your entire Faculty Computing Allowance for a year and need additional compute time on Savio, please contact us at <brc-hpc-help@berkeley.edu>. We can help you set up an MOU, through which you can pay for additional blocks of compute time at a rate that is highly competitive with those of other compute providers.
 
 Depending on the specific group(s) to which a user belongs, s/he may have access to one or more of the models described above. Therefore, it is highly recommended that all users become familiar with the following scheduler configuration on the SAVIO cluster to use its resources in an efficient manner:
 
@@ -693,5 +693,3 @@ For many examples of job script files that you can adapt and use for running you
 ### [Software Configuration]()
 
 The SAVIO cluster uses [Environment Modules](http://research-it.berkeley.edu/services/high-performance-computing/accessing-and-installing-software) to manage the cluster-wide software installation.
-
-

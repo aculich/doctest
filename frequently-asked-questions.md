@@ -53,5 +53,3 @@ A. The basic premise of Condo participation is to facilitate the sharing of unus
 ### Q. How do I "burst" onto more nodes?
 
 A. There are two ways to do this. First, Condo users can access more nodes via Savio's preemptable, <a href="http://research-it.berkeley.edu/services/high-performance-computing/user-guide#Low_Priority" class="toc-filter-processed">low-priority quality of service option</a>. Second, faculty can obtain a [Faculty Computing Allowance](http://research-it.berkeley.edu/services/high-performance-computing/faculty-computing-allowance), and their users can then submit jobs to the General queues to run on the compute nodes provided by the institution. (Use of these nodes is subject to the current job queue policies for general institutional access.)
-
-

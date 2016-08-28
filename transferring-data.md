@@ -36,5 +36,3 @@ See [Accessing and Installing Software](http://research-it.berkeley.edu/services
 -   **Box**: For basic instructions, see: [Transferring Data Between Savio and Your UC Berkeley Box account](http://research-it.berkeley.edu/services/high-performance-computing/transferring-data-between-savio-and-your-uc-berkeley-box-account).
 
 Additional tutorials for transferring files to/from Google Drive, Amazon Web Services (AWS) S3, and other popular data storage sites are in planning or development. If you have any interest in working on or testing one of these, or have suggestions for other data transfer tutorials, please contact us at <brc-hpc-help@berkeley.edu>.
-
-

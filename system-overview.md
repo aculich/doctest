@@ -71,5 +71,3 @@ Data Transfer: [Globus Connect](https://www.globus.org/)
 ------------------------
 
 See [Accessing and Installing Software](http://research-it.berkeley.edu/services/high-performance-computing/accessing-and-installing-software) for an overview of the types of application software, tools, and utilities provided on Savio.
-
-
