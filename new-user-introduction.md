@@ -16,8 +16,8 @@ $ ssh myusername@hpc.brc.berkeley.edu
 
 **Transfering data**. To transfer data from other computers into - or out of - your directories on Savio, you can use protocols and tools like SCP, STFP, FTPS, and Rsync. If you're transferring lots of data, the web-based Globus Connect tool is typically your best choice: it can perform fast, reliable, unattended transfers. Whenever you transfer data, you'll need to connect to Savio's dedicated Data Transfer Node, dtn.brc.berkeley.edu. For more information on getting your data onto and off of Savio, please see [Transferring Data](http://research-it.berkeley.edu/services/high-performance-computing/transferring-data).
 
-**For more information**. You might also refer to the [Tips & Tricks](http://research-it.berkeley.edu/services/high-performance-computing/tips-using-brc-savio-cluster) page for more helpful information on how to use the Savio cluster. And don't forget the main [User Guide](http://research-it.berkeley.edu/services/high-performance-computing/user-guide) - it's packed with information you'll need.  
-  
+**For more information**. You might also refer to the [Tips & Tricks](http://research-it.berkeley.edu/services/high-performance-computing/tips-using-brc-savio-cluster) page for more helpful information on how to use the Savio cluster. And don't forget the main [User Guide](http://research-it.berkeley.edu/services/high-performance-computing/user-guide) - it's packed with information you'll need.
+
 It's possible that you still have questions about topics that we have not covered here. For additional help, support, or information, please see [Getting Help](http://research-it.berkeley.edu/services/high-performance-computing/getting-help).
 
  

@@ -9,7 +9,7 @@ There are several basic SLURM commands you'll likely use often:
 
 -   `sbatch` - Submit a job to the batch queue system, e.g., `sbatch myjob.sh`, where `myjob.sh` is a SLURM job script. (On this page, you can find both a simple, [introductory example of a job script](#Basic-job-submission), as well as [many other examples of job scripts](#Job-submission-with-specific-resource-requirements) for specific types of jobs you might run. Adapting and modifying one of these examples is the quickest way to get started with running batch jobs.)
 -   `srun` - Submit an interactive job to the batch queue system
--   `scancel`` `- Cancel a job, e.g., `scancel 123`, where 123 is a job ID
+-   ``` scancel``  ```- Cancel a job, e.g., `scancel 123`, where 123 is a job ID
 -   `squeue` - Check the current jobs in the batch queue system, e.g., `squeue -u $USER` to view your own jobs
 -   `sinfo` - View the current status of the queues
 
@@ -32,7 +32,7 @@ When submitting a job, the two key options required are the **account** you are
 -   **Partition**: Each job must be submitted to a particular partition. A partition can also be considered to be a job queue that comes with a set of constraints, such as job size limit, time limit, etc. Jobs submitted within a partition will be allocated to that partition's set of compute nodes based on the scheduling policy, until all resources within that partition are exhausted. Currently, on the Savio cluster, partitions are also associated with specific types of computational resources on which you can request your job be run, such as older or newer generations of standard compute nodes, "big memory" nodes, nodes with Graphics Processing Units (GPUs), etc. (See below for a command that you can run to find out what partitions you can use in your own job script files.)
 -   **QoS**: A QoS is a classification that determines what kind of resources your job can use. For instance, there is a QoS option that you can select for running test jobs when you're debugging your code, which further constrains the resources available to your job and thus may reduce its cost. As well, Condo users can select a "lowprio" QoS which can make use of unused resources on the cluster, in exchange for these jobs being subject to termination when needed, in order to free resources for higher priority jobs. (See below for a command that you can run to find out what QoS options you can use in your own job script files.)
 
-You can view the accounts you have access to, partitions you can use, and the QoS options available to you using the `sacct``mgr` command:
+You can view the accounts you have access to, partitions you can use, and the QoS options available to you using the ``` sacct``mgr ``` command:
 
 `sacctmgr -p show associations user=`$USER
 
@@ -46,7 +46,7 @@ This will return output such as the following for a hypothetical example user `l
 `brc|fc_lee|lee|savio2_bigmem|...|savio_debug,savio_normal|savio_normal||`  
 `brc|fc_lee|lee|savio2|...|savio_debug,savio_normal|savio_normal||brc|fc_lee|lee|savio|...|savio_debug,savio_normal|savio_normal||brc|fc_lee|lee|savio_bigmem|...|savio_debug,savio_normal|savio_normal||`
 
-The `Account`, `Partition`, and `QOS` fields indicate which partitions and QoSes you have access to under each of your account(s). The `Def QoS` field identifies the default QoS that will be used if you do not explicitly identify a QoS when submitting a job. Thus as per the example above, if the user `lee` submitted a batch job using their `fc_lee` account, they could submit their job to either the `savio2_gpu`, ` savio2`\_htc, `savio2_bigmem`, `savio2`, `savio`, or `savio_bigmem` partitions. (And when doing so, they could also choose either the `savio_debug` or `savio_normal` QoS, with a default of `savio_normal` if no QoS was specified.)
+The `Account`, `Partition`, and `QOS` fields indicate which partitions and QoSes you have access to under each of your account(s). The `Def QoS` field identifies the default QoS that will be used if you do not explicitly identify a QoS when submitting a job. Thus as per the example above, if the user `lee` submitted a batch job using their `fc_lee` account, they could submit their job to either the `savio2_gpu`, `savio2`\_htc, `savio2_bigmem`, `savio2`, `savio`, or `savio_bigmem` partitions. (And when doing so, they could also choose either the `savio_debug` or `savio_normal` QoS, with a default of `savio_normal` if no QoS was specified.)
 
 If you are running your job in a condo, be sure to note which of the line(s) of output associated with the condo account (those beginning with "co\_" ) have their `Def QoS` being a lowprio QoS and which have a normal QoS. Those with a normal QoS (such as the line highlighted in **boldface text** in the above example) are the QoS to which you have priority access, while those with a lowprio QoS are those to which you have only low priority access. Thus, in the above example, the user `lee` should select the `co_physics` account and the `savio2` partition when they want to run jobs with normal priority, using the resources available via their condo membership.
 
@@ -473,7 +473,7 @@ The purpose of this section is to help users who are familiar with Torque/PBS to
 
 Table 1 lists the common tasks that you can perform in Torque/PBS and the equivalent ways to perform those tasks in SLURM.
 
-<table>
+<table style="width:99%;">
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -535,7 +535,7 @@ Table 1 lists the common tasks that you can perform in Torque/PBS and the equiv
 
 Table 2 lists the commonly used options in the batch job script for both Torque/PBS (qsub) and SLURM (sbatch/srun/salloc).
 
-<table>
+<table style="width:99%;">
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -645,7 +645,7 @@ Table 2 lists the commonly used options in the batch job script for both Torque/
 </tbody>
 </table>
 
-<table>
+<table style="width:99%;">
 <colgroup>
 <col width="33%" />
 <col width="33%" />
@@ -742,7 +742,7 @@ Table 2 lists the commonly used options in the batch job script for both Torque/
 
 Table 3 lists the commonly used environment variables in Torque/PBS and the equivalents in SLURM.
 
-<table>
+<table style="width:99%;">
 <colgroup>
 <col width="33%" />
 <col width="33%" />

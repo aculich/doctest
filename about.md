@@ -28,8 +28,8 @@ The model for sustaining Savio is premised on an institutional/condo model, with
 
 **People**
 
-This service is supported by a collaboration with the [High Performance Computing Services Group](http://scs.lbl.gov) at Lawrence Berkeley National Laboratory.  
-  
+This service is supported by a collaboration with the [High Performance Computing Services Group](http://scs.lbl.gov) at Lawrence Berkeley National Laboratory.
+
 Berkeley Research Computing - HPC Staff:
 
 Gary Jung - Manager, BRC High Performance Computing  

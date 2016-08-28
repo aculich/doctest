@@ -22,8 +22,8 @@ Usage from June 1, 2016 through the early evening of August 17, 2016 by all clus
 
 ### Q. How can I use $SLURM\_JOBID in my output and/or error log filenames? {#q.-how-can-i-use-slurm_jobid-in-my-output-andor-error-log-filenames}
 
-**A.** SLURM uses a different way to manage SLURM-specific environment variables, which is in turn different than PBS or other job schedulers. Before you use a SLURM environment variable, please check its scope of availability by entering "man sbatch" or "man srun".  
-  
+**A.** SLURM uses a different way to manage SLURM-specific environment variables, which is in turn different than PBS or other job schedulers. Before you use a SLURM environment variable, please check its scope of availability by entering "man sbatch" or "man srun".
+
 To use the JOBID as part of the output file name, it takes a filename pattern instead of any of the environment variables. Please "man sbatch" for details. As a quick reference, the proper syntax is "**--output=%j.out**".
 
 ### Q. When is my job going to start to run? {#q.-when-is-my-job-going-to-start-to-run}
@@ -55,8 +55,8 @@ If, after going through all of these steps, you are still puzzled by why your jo
 
 **A.** If you have a set of common tasks that you would like to perform on the cluster, and these tasks share the characteristics of short duration and a decent number of them, they fall into the category of High-Throughput Computing (HTC). Typical applications such as parameter/configuration scanning, divide and conquer approach can all be categorized like this. Resolving an HTC problem isn't easy on a traditional HPC cluster with time and resource limits. However, within the room that one can maneuver, there are still some options available.
 
-Here we demonstrate one approach by using the "ht\_helper.sh" (HT Helper) script that RIT provides. The idea of the "**ht\_helper.sh**" script is to fire an FIFO mini scheduler within a real scheduler allocation (SLURM or PBS), then cycle through all the tasks within the real scheduler allocation by using the mini scheduler. These tasks could be either serial or parallel.  
-  
+Here we demonstrate one approach by using the "ht\_helper.sh" (HT Helper) script that RIT provides. The idea of the "**ht\_helper.sh**" script is to fire an FIFO mini scheduler within a real scheduler allocation (SLURM or PBS), then cycle through all the tasks within the real scheduler allocation by using the mini scheduler. These tasks could be either serial or parallel.
+
 The following are the usage instructions for this "ht\_helper.sh" script:
 
 ~~~~ rteindent1
@@ -85,10 +85,10 @@ Usage: /global/home/groups/allhands/bin/ht_helper.sh [-dhkv] [-f hostfile]
     -v    verbose mode
 ~~~~
 
-To use the helper script you will need to prepare one taskfile and one job script file. The taskfile will contain all the tasks that you need to run. If a self identifier is desired for each task, environment variable "$HT\_TASK\_ID" can be used in the taskfile, or any of the subsequent scripts. The taskfile takes three types of input as showed in the usage page. If you are running MPI type of tasks, please make sure not to have the mpirun command in the taskfile, instead you only need to input the actual executable and input options. If mpirun command line options are required please provide them via the "-o" option. For users running parallel tasks, please make sure to turn off CPU affinity settings, if any, to avoid conflicts and serious oversubscription of CPUs. The next important parameter is the "-n" option - how many processors/cpus you want to allocate for each task, the default value is "1" for serial tasks if not provided. If you are running short-duration tasks (less than a few minutes), you may also want to reduce the default mini scheduler check interval from 60 seconds to a smaller value with the "-s" option. If you are running within an SLURM or PBS allocation, please do not specify the hostfile with "-f" option which may conflict with the default allocation. To get familiar with using this helper script, you may want to turn on "-d" (dump output from each task to an individual file), "-k" (keep intermediate files), and "-v" (verbose mode) options so that you can better understand how it works. After you are familiar with the process, you can choose which options to use, we recommend "-d" and "-v". For the job script file it will look similar to a job script for a parallel job, except that you want to run command "ht\_helper.sh" on the taskfile that was just prepared instead of anything else.  
-  
-Here's an example of it in production, demonstrating running an 8-task job within a 4-CPU allocation.  
-  
+To use the helper script you will need to prepare one taskfile and one job script file. The taskfile will contain all the tasks that you need to run. If a self identifier is desired for each task, environment variable "$HT\_TASK\_ID" can be used in the taskfile, or any of the subsequent scripts. The taskfile takes three types of input as showed in the usage page. If you are running MPI type of tasks, please make sure not to have the mpirun command in the taskfile, instead you only need to input the actual executable and input options. If mpirun command line options are required please provide them via the "-o" option. For users running parallel tasks, please make sure to turn off CPU affinity settings, if any, to avoid conflicts and serious oversubscription of CPUs. The next important parameter is the "-n" option - how many processors/cpus you want to allocate for each task, the default value is "1" for serial tasks if not provided. If you are running short-duration tasks (less than a few minutes), you may also want to reduce the default mini scheduler check interval from 60 seconds to a smaller value with the "-s" option. If you are running within an SLURM or PBS allocation, please do not specify the hostfile with "-f" option which may conflict with the default allocation. To get familiar with using this helper script, you may want to turn on "-d" (dump output from each task to an individual file), "-k" (keep intermediate files), and "-v" (verbose mode) options so that you can better understand how it works. After you are familiar with the process, you can choose which options to use, we recommend "-d" and "-v". For the job script file it will look similar to a job script for a parallel job, except that you want to run command "ht\_helper.sh" on the taskfile that was just prepared instead of anything else.
+
+Here's an example of it in production, demonstrating running an 8-task job within a 4-CPU allocation.
+
 **taskfile:**
 
 ~~~~ rteindent1
@@ -120,8 +120,8 @@ As well, the Savio cluster now also offers [High Throughput Computing nodes](htt
 
 ### Q. How can I run Hadoop jobs? {#q.-how-can-i-run-hadoop-jobs}
 
-**A.** The Hadoop framework and an auxiliary script are provided to help users to run Hadoop jobs on the HPC clusters in Hadoop On Demand (HOD) fashion. The auxiliary script "**hadoop\_helper.sh**" is located in /global/home/groups/allhands/bin/hadoop\_helper.sh and can be used interactively or from a job script. Please note that this script only provides functions to help to build a Hadoop environment, so it should never be run directly. The proper way to use it is to source it from your current environment by running "**source /global/home/groups/allhands/bin/hadoop\_helper.sh**" (only bash is supported right now). After that please run "**hadoop-usage**" to see how to run Hadoop jobs. You will need to run "**hadoop-start**" to initialize an HOD environment and run "**hadoop-stop**" to destroy the HOD environment after your Hadoop job completes.  
-  
+**A.** The Hadoop framework and an auxiliary script are provided to help users to run Hadoop jobs on the HPC clusters in Hadoop On Demand (HOD) fashion. The auxiliary script "**hadoop\_helper.sh**" is located in /global/home/groups/allhands/bin/hadoop\_helper.sh and can be used interactively or from a job script. Please note that this script only provides functions to help to build a Hadoop environment, so it should never be run directly. The proper way to use it is to source it from your current environment by running "**source /global/home/groups/allhands/bin/hadoop\_helper.sh**" (only bash is supported right now). After that please run "**hadoop-usage**" to see how to run Hadoop jobs. You will need to run "**hadoop-start**" to initialize an HOD environment and run "**hadoop-stop**" to destroy the HOD environment after your Hadoop job completes.
+
 The example below shows how to use it interactively.
 
 ~~~~ rteindent1
@@ -170,8 +170,8 @@ hadoop-stop
 
 ### Q. How can I run Spark jobs? {#q.-how-can-i-run-spark-jobs}
 
-**A.** The Spark framework and an auxiliary script are provided to help users to run Spark jobs on the HPC clusters in Spark On Demand (SOD) fashion. The auxiliary script "**spark\_helper.sh**" is located in /global/home/groups/allhands/bin/spark\_helper.sh and can be used interactively or from a job script. Please note that this script only provides functions to help to build a Spark environment, so it should never be run directly. The proper way to use it is to source it from your current environment by running "**source /global/home/groups/allhands/bin/spark\_helper.sh**" (only bash is supported right now). After that please run "**spark-usage**" to see how to run Spark jobs. You will need to run "**spark-start**" to initialize an SOD environment and run "**spark-stop**" to destroy the SOD environment after your Spark job completes.  
-  
+**A.** The Spark framework and an auxiliary script are provided to help users to run Spark jobs on the HPC clusters in Spark On Demand (SOD) fashion. The auxiliary script "**spark\_helper.sh**" is located in /global/home/groups/allhands/bin/spark\_helper.sh and can be used interactively or from a job script. Please note that this script only provides functions to help to build a Spark environment, so it should never be run directly. The proper way to use it is to source it from your current environment by running "**source /global/home/groups/allhands/bin/spark\_helper.sh**" (only bash is supported right now). After that please run "**spark-usage**" to see how to run Spark jobs. You will need to run "**spark-start**" to initialize an SOD environment and run "**spark-stop**" to destroy the SOD environment after your Spark job completes.
+
 The example below shows how to use it interactively:
 
 ~~~~ rteindent1

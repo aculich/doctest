@@ -18,7 +18,7 @@ To transfer data to or from the SAVIO cluster, connect to the cluster's Data Tra
 
 Please refer to the following table with the hardware configuration of each generation of nodes. A high performance Lustre file system is also available as scratch space to all users.
 
-<table style="width:100%;">
+<table style="width:99%;">
 <colgroup>
 <col width="11%" />
 <col width="11%" />
@@ -119,16 +119,57 @@ n0[215-222].savio2</p></td>
 
 SAVIO cluster users are entitled to access the following storage systems. Please be sure to use these filesystems correctly. Users should not use their HOME directory for heavy I/O activity during job runs.
 
-| Name    | Location             | Quota  | Backup | Allocation | Description                                  |
-|---------|----------------------|--------|--------|------------|----------------------------------------------|
-| HOME    | /global/home/users/  | 10 GB  | Yes    | Per User   | HOME directory for permanent data            |
-| GROUP   | /global/home/groups/ | 200 GB | No     | Per Group  | GROUP directory for shared data (Condo only) |
-| SCRATCH | /global/scratch/     | none   | No     | Per User   | SCRATCH directory with Lustre FS             |
+<table style="width:323%;">
+<colgroup>
+<col width="90%" />
+<col width="20%" />
+<col width="80%" />
+<col width="80%" />
+<col width="11%" />
+<col width="42%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Location</th>
+<th>Quota</th>
+<th>Backup</th>
+<th>Allocation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HOME</td>
+<td>/global/home/users/</td>
+<td>10 GB</td>
+<td>Yes</td>
+<td>Per User</td>
+<td>HOME directory for permanent data</td>
+</tr>
+<tr class="even">
+<td>GROUP</td>
+<td>/global/home/groups/</td>
+<td>200 GB</td>
+<td>No</td>
+<td>Per Group</td>
+<td>GROUP directory for shared data (Condo only)</td>
+</tr>
+<tr class="odd">
+<td>SCRATCH</td>
+<td>/global/scratch/</td>
+<td>none</td>
+<td>No</td>
+<td>Per User</td>
+<td>SCRATCH directory with Lustre FS</td>
+</tr>
+</tbody>
+</table>
 
 ### [Scheduler Configuration]() {#scheduler-configuration}
 
-The SAVIO cluster uses [SLURM](http://research-it.berkeley.edu/services/high-performance-computing/running-your-jobs) as the scheduler to manage jobs on the cluster. Please see [Running Your Jobs](http://research-it.berkeley.edu/services/high-performance-computing/running-your-jobs) for instructions on using the scheduler, as well as taking note of crucial additional details, below.  
-  
+The SAVIO cluster uses [SLURM](http://research-it.berkeley.edu/services/high-performance-computing/running-your-jobs) as the scheduler to manage jobs on the cluster. Please see [Running Your Jobs](http://research-it.berkeley.edu/services/high-performance-computing/running-your-jobs) for instructions on using the scheduler, as well as taking note of crucial additional details, below.
+
 Three different models are supported when running jobs on the Savio cluster through the scheduler:
 
 -   Condo model - Faculty and principal investigators can join the [Condo program](http://research-it.berkeley.edu/services/high-performance-computing/condo-cluster-program) by purchasing compute nodes which are contributed to the cluster. Users from the condo group are granted ongoing, no cost use of compute resources for running their jobs, up to the amount contributed. Condo users can also access larger amounts of compute resources at no cost via Savio's preemptable, [low-priority quality of service option](#Low_Priority).
@@ -147,7 +188,7 @@ Depending on the specific group(s) to which a user belongs, s/he may have access
 
 ##### Configuration Details {#configuration-details}
 
-<table>
+<table style="width:96%;">
 <colgroup>
 <col width="12%" />
 <col width="12%" />
@@ -524,7 +565,7 @@ pc_*</td>
 
 ##### [Savio Condo QoS Configurations]() {#savio-condo-qos-configurations}
 
-<table>
+<table style="width:99%;">
 <colgroup>
 <col width="33%" />
 <col width="33%" />

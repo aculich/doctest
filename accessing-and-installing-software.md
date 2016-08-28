@@ -2,10 +2,10 @@
 
 ### [1. Overview]() {#overview}
 
-To access much of the software available on the Savio cluster - ranging from compilers and interpreters to statistical analysis and visualization software, and much more - you'll use [Environment Module commands](#Examples).  
-  
-These commands allow you to display a list of many of the [software packages provided on the cluster](#Software_Provided), as well as to conveniently load and unload different packages and their associated runtime environments, as you need them.  
-  
+To access much of the software available on the Savio cluster - ranging from compilers and interpreters to statistical analysis and visualization software, and much more - you'll use [Environment Module commands](#Examples).
+
+These commands allow you to display a list of many of the [software packages provided on the cluster](#Software_Provided), as well as to conveniently load and unload different packages and their associated runtime environments, as you need them.
+
 As a quick overview, Environment Modules are used to manage users’ runtime environments dynamically on the Savio cluster. This is accomplished by loading and unloading modulefiles which contain the application specific information for setting a user’s environment, primarily the shell environment variables, such as *PATH*, *LD\_LIBRARY\_PATH*, etc. Modules are useful in managing different applications, as well as different versions of the same application, in a cluster environment.
 
 Finally, in addition to the software provided on the Savio cluster, you're also welcome to [install your own software](#Installing).
@@ -25,8 +25,8 @@ Below are some of the Environment Module commands that you'll be using most freq
 
 For more detailed usage instructions for the **module** command, please run man module on the cluster.
 
-Below are representative examples of how to use these commands. Depending on which system you have access to and when you are reading this instruction, what you see here could be different from the actual output from the system that you work on. On systems like Savio, where a hierarchical structure is used, some modulefiles will only be available after their root modulefile is loaded. (For instance, modulefiles for various Python packages will only become available after you've loaded Python itself. Similarly, R packages, libraries for C compilers, and the like, will only become available after their respective parent modules have been loaded.)  
-  
+Below are representative examples of how to use these commands. Depending on which system you have access to and when you are reading this instruction, what you see here could be different from the actual output from the system that you work on. On systems like Savio, where a hierarchical structure is used, some modulefiles will only be available after their root modulefile is loaded. (For instance, modulefiles for various Python packages will only become available after you've loaded Python itself. Similarly, R packages, libraries for C compilers, and the like, will only become available after their respective parent modules have been loaded.)
+
 It can be helpful to try out each of the following examples in sequence, to more fully understand how environment modules work. Commands you'll enter are shown in **bold**, followed by samples of output you might see:
 
     [casey@n0000 ~]$ module avail
@@ -116,7 +116,6 @@ It can be helpful to try out each of the following examples in sequence, to more
 
 ...
 
-  
 **NOTE: Python modulefiles will become available only after the “*python*” modulefile is loaded. The same is the case for R packages, libraries for C compilers, etc.: they will only become available after their respective parent modules are loaded.**  
  
 
@@ -124,10 +123,10 @@ It can be helpful to try out each of the following examples in sequence, to more
 
 Research IT provides and maintains a set of system level software modules. The purpose is to provide an ecosystem that most users can rely on to accomplish their research and studies. The range of applications and libraries that Research IT supports highly depend on the use case and the frequency of how often a support request is received.
 
-For a detailed and up-to-date list of software provided on the cluster, run the module avail command, as described in [the usage examples above](#Examples).  
-  
-(Note: if you're interested in whether a particular C library, Python module, R package, or the like is provided on the cluster, make sure that you first load the parent software itself – such as the Intel or GCC compilers, Python, or R – before checking the list of provided software, as that list is dynamically adjusted based on your current environment.)  
-  
+For a detailed and up-to-date list of software provided on the cluster, run the module avail command, as described in [the usage examples above](#Examples).
+
+(Note: if you're interested in whether a particular C library, Python module, R package, or the like is provided on the cluster, make sure that you first load the parent software itself – such as the Intel or GCC compilers, Python, or R – before checking the list of provided software, as that list is dynamically adjusted based on your current environment.)
+
 Currently the following categories of applications and libraries are supported, with some key examples of each shown below:
 
 -   Development Tools
@@ -188,18 +187,15 @@ Environment Modules also allow a user to optionally integrate their own applicat
      
 -   The second category of the modulefiles are automatically chained for the group of users who belong to the same group on the cluster, if the modulefiles exist in the designated directory. This allows the same group of users to share some of the common applications that they use for collaboration and saves spaces. Normally the user group maintains these modulefiles. But Research IT can also provide assistance under support agreement and on a per request basis.  
      
--   The third category of the modulefiles can also be chained on demand by a user if the user chooses to use Environment Modules to manage user specific applications as well. To do that, user needs to append the location of the modulefiles to the environment variable *MODULEPATH*. This can be done in one of the following ways:  
-      
+-   The third category of the modulefiles can also be chained on demand by a user if the user chooses to use Environment Modules to manage user specific applications as well. To do that, user needs to append the location of the modulefiles to the environment variable *MODULEPATH*. This can be done in one of the following ways:
+
     1). For bash users, please add the following to ~/.bashrc:
 
         export MODULEPATH=$MODULEPATH:/location/to/my/modulefiles
 
-      
     2). For csh/tcsh users, please add the following to ~/.cshrc:
 
         setenv MODULEPATH "$MODULEPATH":/location/to/my/modulefiles
-
-                
 
 ### [5. Installing Your Own]() {#installing-your-own}
 

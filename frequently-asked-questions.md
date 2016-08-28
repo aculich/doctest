@@ -5,8 +5,8 @@ General FAQs {#general-faqs}
 
 ### Q. How can I access the Faculty Computing Allowance application (Requirements Survey) and Additional User Request forms? I'm seeing a "You need permission" error. {#q.-how-can-i-access-the-faculty-computing-allowance-application-requirements-survey-and-additional-user-request-forms-im-seeing-a-you-need-permission-error.}
 
-A. Starting in late March 2016, you will now need to [authenticate via CalNet](https://calnetweb.berkeley.edu/calnet-me) to access the online forms for applying for a Faculty Computing Allowance, and for requesting additional user accounts on the Savio cluster.  
-  
+A. Starting in late March 2016, you will now need to [authenticate via CalNet](https://calnetweb.berkeley.edu/calnet-me) to access the online forms for applying for a Faculty Computing Allowance, and for requesting additional user accounts on the Savio cluster.
+
 When accessing either form, you may encounter the error message, "You need permission. This form can only be viewed by users in the owner's organization", under either of these circumstances:
 
 <span colspan="2"><span style="word-wrap:break-word;display:block">1. If you haven't already successfully logged in via CalNet. (If you don't have a CalNet ID, please work with a UCB faculty member or other researcher who can access the form on your behalf.)</span></span>2. If you've logged in via CalNet, but you're also simultaneously connected, in your browser, to a non-UCB Google account; for instance, to access a personal Gmail account. (If so, the easiest way to access the online forms might be to use a second browser on your computer, one in which you aren't already logged into a Google account. As an alternative, you can log out of both accounts in your primary browser, before accessing these forms.)

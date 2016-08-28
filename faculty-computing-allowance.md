@@ -28,8 +28,8 @@ Each time a computational job is run on the cluster under a Faculty Computing A
 Have you exhausted your entire Faculty Computing Allowance? There are a number of [options for getting more computing time for your project](http://research-it.berkeley.edu/services/high-performance-computing/options-when-faculty-computing-allowance-exhausted).
 
 **Acknowledgements**  
-Please acknowledge Savio in your publications. (Such acknowledgements are an important factor in helping to justify ongoing funding for, and expansion of, the cluster.) A sample statement is:  
-  
+Please acknowledge Savio in your publications. (Such acknowledgements are an important factor in helping to justify ongoing funding for, and expansion of, the cluster.) A sample statement is:
+
 *"This research used the Savio computational cluster resource provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer)."*
 
 As well, we encourage you to [tell us how BRC impacts your research](https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdqhh2A77-l8N3eOcOzrH508UKfhIvPn8h5gLDUJ9XrRLvA5Q/viewform) (Google Form), at any time!
