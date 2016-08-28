@@ -1,14 +1,14 @@
-[Planned Outages](#outages) | [Announcements](#announcements) | [Live Status](#Status)
+[Planned Outages](#planned-outages) | [Announcements](#announcements) | [Live Status](#live-status)
 
-### **System Status** {#system-status}
+### **System Status**
 
 All systems are available.
 
-### [Planned Outages]() {#planned-outages}
+### [Planned Outages](#planned-outages)
 
 There are no planned outages scheduled at this time.
 
-### [Announcements]() {#announcements}
+### [Announcements](#announcements)
 
 **July 27, 2016 11:30 PDT -** The Savio cluster's scratch filesystem (/global/scratch) is now back online. Savio's job scheduler has been released from its downtime-related reservations, and jobs are running as scheduled before.
 
@@ -101,4 +101,4 @@ BRC SAVIO cluster will continue to operate during the UC Berkeley Holiday Curt
 **12/12/2014 - SAVIO Global SCRATCH Problem**  
 SAVIO cluster SCRATCH filesystem (/global/scratch) started having issues from afternoon today, Dec 12th. One of the backend storage controller started labeling some of the disks as failed. BRC engineers having been working on it since this afternoon and as of now the filesystem is back online and users should be able to access all their data. But to bring this RAID filesystem back to it normal condition all the failed disks need to rebuild and that process is going on right now. Until the rebuilding process completes successfully (over the next couple of days) we cannot guarantee total stability of the filesystem. There is some possibility that filesystem does not recover and we experience data loss. As the filesystem is accessible right now we ask all our SAVIO cluster users to review what they have under this SCRATCH filesystem and manually backup any important data immediately to a local storage. Please remember this is a SCRATCH filesystem and there are no system level backups, if data is lost we cannot recover. We highly recommend using [Globus](https://www.globus.org/) for data transfers out of the SAVIO cluster. Our endpoint name is ucb\#brc. If you would prefer to use traditional transfer tools like scp/rsync please login to the dedicated Data Transfer Node (DTN), dtn.brc.berkeley.edu and start your transfers from that node.
 
-### [Live Status]() {#live-status}
+### [Live Status](#live-status)
